@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<style type="text/css">
+		body {
+			align-items: center;
+		}
+		#title {
+			font-weight: bolder;
+			text-align: center;
+			font-style: italic;
+			color: black;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		table {
+			/*border-collapse:collapse;*/
+			/*border-bottom: hidden;*/
+			width: 220px;
+			margin: 0 auto;
+		}
+
+		td {
+			background-color: black;
+			color: white;
+			/*border: 3px solid black;*/
+			align-content: center;
+			font-size:30px;
+			padding: 0;
+			margin: 0;
+			width: 70px;
+			height: 70px;
+			line-height: 70px;
+			text-align: center;
+			cursor: pointer;
+			/*border-radius: 10px 10px 10px 10px;*/
+		}
+
+		td:hover {
+			background-color: grey;
+		}
+/*		div {
+			background-color: blue;
+			width: 70px;
+			height: 70px;
+			line-height: 70px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		div:hover {
+			background-color: lightgrey;
+		}
+*/
+
+		#c3, #c4, #c5 {
+			border-bottom: 5px solid white;
+			border-top: 5px solid white;
+		}
+
+		#c1, #c4, #c7 {
+			border-left: 5px solid white;
+			border-right: 5px solid white;
+		}
+
+		#c0 {
+			border-radius: 10px 0px 0px 0px;
+		}
+
+		#c2 {
+			border-radius: 0px 10px 0px 0px;
+		}
+
+		#c8 {
+			border-radius: 0px 0px 10px 0px;
+		}
+
+		#c6 {
+			border-radius: 0px 0px 0px 10px;
+		}
+
+		#restart {
+			margin-top: 25px;
+			display: flex;
+			justify-content: center;
+		}
+
+		button {
+			width: 90px;
+    		height: 50px;
+    		color: black;
+    		/*font-weight: bold;*/
+    		font-style: italic;
+    		font-size: 20px;
+    		background-color: lightgrey;
+    		border: hidden;
+    		cursor: pointer;
+    		border-radius: 25px;
+		}
+
+		.winner {
+			color: red;
+			background-color: lightgrey;
+		}
+
+		.draw {
+			color: blue;
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="title">-- Tic Tac Toe --</h1>
+	<table>
+		<tr>
+			<td id="c0"></td>
+			<td id="c1"></td>
+			<td id="c2"></td>
+		</tr>
+		<tr>
+			<td id="c3"></td>
+			<td id="c4"></td>
+			<td id="c5"></td>
+		</tr>
+		<tr>
+			<td id="c6"></td>
+			<td id="c7"></td>
+			<td id="c8"></td>
+		</tr>
+	</table>
+	<div id="restart">
+		<button id="restartBtn">Restart</button>
+	</div>
+	
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
+
+
